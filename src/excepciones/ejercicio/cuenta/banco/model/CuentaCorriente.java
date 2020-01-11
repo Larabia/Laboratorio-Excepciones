@@ -1,15 +1,11 @@
-package excepciones.ejercicio.cuenta.banco;
+package excepciones.ejercicio.cuenta.banco.model;
 
 public class CuentaCorriente extends CuentaDeBanco{
 	
 
 	private float descubierto;
 	
-public CuentaCorriente(float descubierto, int numCuenta, float saldo) {
-	super(numCuenta, saldo);
-		this.descubierto = descubierto;
-	// TODO Auto-generated constructor stub
-}
+
 
 public float getDescubierto() {
 	return descubierto;
