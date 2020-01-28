@@ -1,1 +1,0 @@
-package excepciones.ejercicio.cuenta.banco.model;
