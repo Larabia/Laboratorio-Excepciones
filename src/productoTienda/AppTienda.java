@@ -2,6 +2,7 @@ package productoTienda;
 
 import java.util.Scanner;
 
+import productoTienda.exceptions.SinStockException;
 import productoTienda.model.Constantes;
 import productoTienda.model.Heladera;
 import productoTienda.model.Lavarropas;
@@ -71,7 +72,7 @@ public class AppTienda {
 					System.out.println("Stock restante de " + heladera.getDescripcion() + ": " + heladera.getStock());
 				}
 
-			} catch (Exception e) {
+			} catch (SinStockException e) {
 				System.out.println("Stock insuficiente, el stock actual es de " + heladera.getStock() + " unidades.");
 			}
 
